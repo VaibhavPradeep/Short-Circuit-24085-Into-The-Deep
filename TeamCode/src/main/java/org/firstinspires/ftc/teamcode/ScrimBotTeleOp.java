@@ -166,6 +166,6 @@ public class ScrimBotTeleOp extends OpMode {
         //telemetry.addData("Current Position", armSlide.getCurrentPosition());
         telemetry.update();
         telemetry.update();
-        // oi oko
+        // oi oko ojoj
     }
 }
