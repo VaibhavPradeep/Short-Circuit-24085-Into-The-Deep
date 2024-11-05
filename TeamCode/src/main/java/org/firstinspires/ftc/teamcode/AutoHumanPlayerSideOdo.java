@@ -6,19 +6,17 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 // Autonomous for Red Alliance - Start Near Human Player
 @Autonomous(name = "Red Alliance Auto - Human Player Side", group = "Autonomous")
 public class AutoHumanPlayerSideOdo extends LinearOpMode {
-    @Override
-    public void runOpMode() throws InterruptedException {
-
-    }
-/*
-    private MecanumDrive drive;
+    /*
+    private void MecanumDriveCircuit(gamepad1.left_stick_y, gamepad1.left_stick_x, gamepad1.right_stick_x) drive;
     private ArmController armController;
     private DR4BController dr4bController;
     private Intake intake;
     private Claw claw;
+    */
 
     @Override
     public void runOpMode() {
+        /*
         // Initialize hardware
         drive = new MecanumDrive(hardwareMap);
         armController = new ArmController(hardwareMap);
@@ -45,9 +43,10 @@ public class AutoHumanPlayerSideOdo extends LinearOpMode {
             dr4bController.raiseToHighRung();
             claw.releaseSample();
         }
-    }
+         */
 
-    // Helper functions for positioning
+        /*
+        // Helper functions for positioning
     private void driveToHighRung() {
         drive.followTrajectory(drive.trajectoryBuilder(drive.getPoseEstimate())
                 .lineTo(new Pose2d(0, 0)) // Replace with calculated coordinates for the high rung
@@ -59,12 +58,7 @@ public class AutoHumanPlayerSideOdo extends LinearOpMode {
                 .lineTo(new Pose2d(0, 0)) // Replace with calculated coordinates for the blue block
                 .build());
     }
-     THE OTHER FILES yjy uh trthgtrgtuhuhu juujuj
+         */
 
-
-     */
+    }
 }
-
-/*
-
- */
