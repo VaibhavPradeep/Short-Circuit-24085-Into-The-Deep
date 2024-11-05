@@ -12,7 +12,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.YawPitchRollAngles;
 
-@TeleOp(name = "TeleOpMain")
+@TeleOp(name = "TeleOpMainGoBilda")
 public class TeleOpMainGoBilda extends OpMode {
     MecanumDriveCircuit mecanumDrive = new MecanumDriveCircuit(gamepad1.left_stick_y, gamepad1.left_stick_x, gamepad1.right_stick_x);
     IMU imu;
