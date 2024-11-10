@@ -23,7 +23,7 @@ public class TeleOpMainGoBilda extends OpMode {
     final double INTAKE_OFF        =  0.0;
     final double INTAKE_DEPOSIT    =  0.5;
 
-    // CHANGE LATER
+    // CHANGE LATER yy
     final double SPECIMEN_COLLECT = 1.0;
     final double SPECIMEN_HOLD = 0;
 
