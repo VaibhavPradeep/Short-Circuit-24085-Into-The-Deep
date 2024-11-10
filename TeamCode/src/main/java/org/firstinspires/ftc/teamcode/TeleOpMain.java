@@ -6,19 +6,19 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 @TeleOp(name = "TeleOpMain")
 public class TeleOpMain extends OpMode {
-    MecanumDrive drive = new MecanumDrive(gamepad1.left_stick_y, gamepad1.left_stick_x, gamepad1.right_stick_x);
+    MecanumDrive MD = new MecanumDrive(gamepad1.left_stick_y, gamepad1.left_stick_x, gamepad1.right_stick_x);
     IntakeLiftCamera ILC = new IntakeLiftCamera();
 
     @Override
     public void init() {
-        drive.initDrive(hardwareMap);
+        MD.initDrive(hardwareMap);
         ILC.initILC(hardwareMap);
     }
 
     @Override
     public void loop() {
         // mecanum drive
-        drive.driveMecanum();
+        MD.driveMecanum();
 
         // moive dr4b motors, gampad 2, dpad up is up, down is down
         ILC.moveDR4BMotors(gamepad2.dpad_up, gamepad2.dpad_down);
