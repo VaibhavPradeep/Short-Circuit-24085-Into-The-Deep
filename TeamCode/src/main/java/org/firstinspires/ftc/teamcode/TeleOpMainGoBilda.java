@@ -27,6 +27,8 @@ public class TeleOpMainGoBilda extends OpMode {
     final double SPECIMEN_COLLECT = 1.0;
     final double SPECIMEN_HOLD = 0;
 
+    private RobotHardware robotHw = new RobotHardware();
+
     double DR4B_SPEED = 0.6;
 
     DcMotor frontRight;

@@ -24,9 +24,9 @@ public class RobotHardware {
     DcMotor rightDR4BMotor;
 
     // coaxial virtual four bar
-    Servo leftCV4BServo;
-    Servo rightCV4BServo;
-    Servo rotateIntakeServo;
+    //Servo leftCV4BServo;
+    //Servo rightCV4BServo;
+    //Servo rotateIntakeServo;
     CRServo intakeServo;
 
     //Specimen
@@ -51,9 +51,9 @@ public class RobotHardware {
         frontRight.setDirection(DcMotorSimple.Direction.REVERSE);
         backRight.setDirection(DcMotorSimple.Direction.REVERSE);
 
-        leftCV4BServo = hwMap.get(Servo.class, "leftCV4BServo");
-        rightCV4BServo = hwMap.get(Servo.class, "rightCV4BServo");
-        rotateIntakeServo = hwMap.get(Servo.class, "rotateIntakeServo");
+        //leftCV4BServo = hwMap.get(Servo.class, "leftCV4BServo");
+        //rightCV4BServo = hwMap.get(Servo.class, "rightCV4BServo");
+        //rotateIntakeServo = hwMap.get(Servo.class, "rotateIntakeServo");
 
         intakeServo = hwMap.get(CRServo.class, "intakeServo");
 
@@ -95,9 +95,9 @@ public class RobotHardware {
         telemetry.addData("left DR4B motor position", leftDR4BMotor.getCurrentPosition());
         telemetry.addData("right DR4B motor position", rightDR4BMotor.getCurrentPosition());
 
-        telemetry.addData("left CRVB motor position", leftCV4BServo.getPosition());
-        telemetry.addData("right CR4B motor position", rightCV4BServo.getPosition());
-        telemetry.addData("rotate intake servo position", rotateIntakeServo.getPosition());
+        //telemetry.addData("left CRVB motor position", leftCV4BServo.getPosition());
+        //telemetry.addData("right CR4B motor position", rightCV4BServo.getPosition());
+        //telemetry.addData("rotate intake servo position", rotateIntakeServo.getPosition());
         telemetry.addData("specimen servo position", specimenServo.getPosition());
 
         telemetry.addData("distance away from anything", getDistance(DistanceUnit.INCH));
