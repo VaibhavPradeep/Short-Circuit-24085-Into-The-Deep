@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 @Autonomous(name = "Red Alliance Auto - Human Player Side", group = "Autonomous")
 public class AutoHumanPlayerSideOdo extends LinearOpMode {
     /*
-    private void MecanumDriveCircuit(gamepad1.left_stick_y, gamepad1.left_stick_x, gamepad1.right_stick_x) drive;
+    private void MecanumDrive drive;
     private ArmController armController;
     private DR4BController dr4bController;
     private Intake intake;

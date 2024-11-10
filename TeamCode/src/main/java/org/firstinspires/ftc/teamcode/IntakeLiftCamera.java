@@ -54,6 +54,7 @@ public class IntakeLiftCamera {
 
         distanceSensor = hwMap.get(DistanceSensor.class, "distanceSensor");
         wristServo = hwMap.get(Servo.class, "wristServo");
+        armServo = hwMap.get(Servo.class, "armServo");
     }
 
     public void moveIntakeServo (boolean a1,boolean x1, boolean b1) {
